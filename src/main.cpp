@@ -3,8 +3,9 @@
 #include "gpio.h"
 #include <SPI.h>
 #include "matrix.h"
+RTC_DS3231 my_rtc;
 void setup() {
-  // put your setup code here, to run once:
+  matrix_begin();
 }
 
 void loop() {

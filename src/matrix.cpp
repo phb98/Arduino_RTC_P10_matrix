@@ -4,6 +4,9 @@
 #include "font.h"
 #include <SPI.h>
 uint32_t matrix_buffer[32];
+void matrix_begin(){
+    
+}
 void matrix_power_off(){
 
 }
