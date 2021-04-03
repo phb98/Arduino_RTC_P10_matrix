@@ -3,10 +3,12 @@
 #include <Arduino.h>
 #include "font.h"
 #include <SPI.h>
+
 uint32_t matrix_buffer[32];
 void matrix_begin(){
     SPI.begin();
     SPI.setClockDivider(SPI_CLOCK_DIV4); 
+
 }
 void matrix_power_off(){
     digitalWrite(MATRIX_OE_PIN,0);
